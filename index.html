@@ -51,7 +51,7 @@
         @supports (z-index: calc(infinity)) {
             #__framer-badge-container {
                 display: none !important;
-                --infinity: infinity;
+                --infinity: -1000;
             }
         }
 
@@ -61,10 +61,8 @@
             bottom: 0;
             padding: 20px;
             width: 100%;
-            display: flex;
             justify-content: flex-end;
             pointer-events: none;
-            z-index: calc(var(--infinity, 2147483647));
         }
         @font-face { font-family: "Geist"; src: url("https://fonts.gstatic.com/s/geist/v3/gyBhhwUxId8gMGYQMKR3pzfaWI_RruM4mJPby1QNtA.woff2"); font-display: swap; font-style: normal; font-weight: 500 }
 @font-face { font-family: "Geist"; src: url("https://fonts.gstatic.com/s/geist/v3/gyBhhwUxId8gMGYQMKR3pzfaWI_RnOM4mJPby1QNtA.woff2"); font-display: swap; font-style: normal; font-weight: 400 }
@@ -414,5 +412,6 @@ if (typeof window !== "undefined") {
     <!-- End of bodyEnd -->
 </body>
 </html>
+
 
 
